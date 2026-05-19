@@ -22,7 +22,7 @@
     .pitch{position:relative;min-height:650px;aspect-ratio:5/4;overflow:hidden;border-radius:32px;background-color:#047857;box-shadow:0 25px 60px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.14);background-image:linear-gradient(90deg,rgba(255,255,255,.08) 0 1px,transparent 1px),linear-gradient(rgba(255,255,255,.06) 0 1px,transparent 1px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 11%,rgba(0,0,0,.05) 11% 22%);background-size:8.333% 10%,100% 10%,100% 100%}
     .pitch-lines{pointer-events:none;position:absolute;inset:0;border:4px solid var(--line);border-radius:32px;overflow:hidden}.half{position:absolute;left:0;right:0;top:50%;height:4px;background:var(--line);transform:translateY(-50%)}.circle{position:absolute;left:50%;top:50%;width:116px;height:116px;border:4px solid var(--line);border-radius:999px;transform:translate(-50%,-50%)}.dot{position:absolute;width:8px;height:8px;background:var(--line);border-radius:999px;transform:translate(-50%,-50%)}.box{position:absolute;left:50%;transform:translateX(-50%);border-color:var(--line);border-style:solid}.big.top{top:0;width:210px;height:110px;border-width:0 4px 4px;border-radius:0 0 24px 24px}.small.top{top:0;width:105px;height:48px;border-width:0 4px 4px;border-radius:0 0 18px 18px}.big.bottom{bottom:0;width:210px;height:110px;border-width:4px 4px 0;border-radius:24px 24px 0 0}.small.bottom{bottom:0;width:105px;height:48px;border-width:4px 4px 0;border-radius:18px 18px 0 0}
     .tile{position:absolute;z-index:10;width:132px;transform:translate(-50%,-50%);border-radius:16px;border:1px solid rgba(255,255,255,.25);background:rgba(2,6,23,.86);color:white;text-align:left;padding:9px;box-shadow:0 16px 30px rgba(0,0,0,.32);user-select:none;cursor:grab}.tile.selected{background:#fde68a;color:#0f172a;border-color:#fcd34d;box-shadow:0 0 0 5px rgba(252,211,77,.35),0 16px 30px rgba(0,0,0,.32)}.tile-head{display:flex;align-items:center;gap:9px}.num{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;flex-shrink:0;background:white;color:#0f172a;font-weight:1000;font-size:14px}.selected .num{background:#0f172a;color:#fde68a}.tile-name{font-weight:1000;font-size:15px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tile-kind{margin-top:4px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:#cbd5e1;font-weight:900}.selected .tile-kind{color:#475569}.subs-mini{margin-top:8px;border-radius:12px;padding:8px;background:rgba(255,255,255,.1);font-size:11px;line-height:1.35;overflow:hidden}.subs-mini div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .compact-tile{position:absolute;z-index:10;display:flex;align-items:center;gap:7px;transform:translate(-50%,-50%);border-radius:999px;padding:5px 9px;background:rgba(2,6,23,.84);color:white;box-shadow:0 12px 25px rgba(0,0,0,.3);user-select:none;cursor:grab}.compact-tile.selected{background:#fde68a;color:#0f172a;box-shadow:0 0 0 5px rgba(252,211,77,.35),0 12px 25px rgba(0,0,0,.3)}.player-dot{width:15px;height:15px;border-radius:999px;background:white;border:2px solid #020617;flex:0 0 auto}.compact-name{max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;font-weight:1000}
+    .compact-tile{position:absolute;z-index:10;display:grid;place-items:center;width:58px;height:58px;transform:translate(-50%,-50%);border-radius:999px;background:#f8fafc;color:#020617;border:4px solid #020617;box-shadow:0 12px 25px rgba(0,0,0,.3);user-select:none;cursor:grab;font-size:18px;font-weight:1000;letter-spacing:-.02em;text-align:center;line-height:1}.compact-tile.selected{background:#fde68a;color:#020617;box-shadow:0 0 0 5px rgba(252,211,77,.35),0 12px 25px rgba(0,0,0,.3)}
     .ball-tile{position:absolute;z-index:20;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;background:transparent;color:white;user-select:none;cursor:grab}.ball-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:999px;background:white;font-size:32px;box-shadow:0 16px 30px rgba(0,0,0,.32);border:4px solid rgba(0,0,0,.2)}.ball-tile.selected .ball-icon{border-color:#fcd34d;box-shadow:0 0 0 5px rgba(252,211,77,.35),0 16px 30px rgba(0,0,0,.32)}.ball-label{margin-top:5px;border-radius:999px;background:rgba(2,6,23,.72);padding:3px 8px;font-size:12px;font-weight:900;max-width:110px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .side-title{margin:0;font-size:26px;line-height:1}.small-muted{color:var(--muted);font-size:14px;font-weight:800;margin:0 0 7px}.active-lineup{color:#a7f3d0;font-size:12px;font-weight:900;margin-top:8px}.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}.help h3{margin:0 0 10px;font-size:20px}.help ol{margin:0;padding-left:22px;color:var(--muted);line-height:1.55}.help li{margin:8px 0}strong{color:white}
     @media(max-width:1100px){.main{grid-template-columns:1fr}.top-grid{grid-template-columns:1fr}.pitch{aspect-ratio:3/4}}@media(max-width:700px){.page{padding:14px}.header{align-items:stretch;flex-direction:column}.counts{margin-left:0}.tile{width:118px}.title{font-size:34px}}
@@ -49,7 +49,7 @@
       <section>
         <div class="card">
           <div class="top-grid">
-            <label><span>Lineup name</span><input id="lineupName" placeholder="e.g. Attacking, Defending, Subs on" /></label>
+            <label><span>Lineup name</span><input id="lineupName" placeholder="" /></label>
             <button id="copyLineupBtn" class="btn violet">Copy to new lineup</button>
             <button id="deleteLineupBtn" class="btn dark">Delete lineup</button>
           </div>
@@ -74,13 +74,9 @@
           <h2 id="selectedTitle" class="side-title">Nothing selected</h2>
           <div id="selectedLineup" class="active-lineup"></div>
           <div id="editor" style="margin-top:22px">
-            <label><span>Tile name</span><input id="tileName" placeholder="e.g. Messi, Striker, Ball 1" /></label><br>
-            <label><span>Number / short label</span><input id="tileShort" maxlength="4" placeholder="e.g. 10, GK, ⚽" /></label><br>
-            <label><span>Subs</span><textarea id="tileSubs" placeholder="Example:
-55' ON: Alex
-55' OFF: Sam
-70' ON: Jordan
-70' OFF: Riley"></textarea></label><br>
+            <label><span>Tile name</span><input id="tileName" placeholder="" /></label><br>
+            <label><span>Number / short label</span><input id="tileShort" maxlength="4" placeholder="" /></label><br>
+            <label><span>Subs</span><textarea id="tileSubs" placeholder=""></textarea></label><br>
             <div class="two-cols">
               <label><span>X position</span><input id="tileX" type="number" min="0" max="100" /></label>
               <label><span>Y position</span><input id="tileY" type="number" min="0" max="100" /></label>
@@ -112,9 +108,10 @@ const $=id=>document.getElementById(id);
 const uid=p=>`${p}-${Date.now()}-${Math.random().toString(36).slice(2,8)}`;
 const clamp=(v,min,max)=>Math.min(max,Math.max(min,Number(v)||0));
 const safeFile=n=>String(n||"lineup").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"lineup";
+const compactLabel=n=>String(n||"?").trim().slice(0,2).toUpperCase()||"?";
 let state=createInitialState(), selectedId="", draggingId="", suppress=false;
 
-function makePlayers(f="4-3-3"){return (FORMATIONS[f]||FORMATIONS["4-3-3"]).map(([pos,x,y],i)=>({id:uid("player"),type:"player",name:pos,short:String(i+1),x,y,subs:i===8?"60' ON: Fresh winger\n60' OFF: Tired winger":""}))}
+function makePlayers(f="4-3-3"){return (FORMATIONS[f]||FORMATIONS["4-3-3"]).map(([pos,x,y],i)=>({id:uid("player"),type:"player",name:pos,short:String(i+1),x,y,subs:""}))}
 function makeBall(name="Ball"){return{id:uid("ball"),type:"ball",name,short:"⚽",x:50,y:50,subs:""}}
 function createLineup(name="Starting XI",formation="4-3-3"){return{id:uid("lineup"),name,formation,compact:false,items:[...makePlayers(formation),makeBall()]}}
 function createInitialState(){const first=createLineup();return{title:"My Football Lineup",activeLineupId:first.id,lineups:[first]}}
@@ -155,9 +152,9 @@ function renderPitch(){
  $("pitch").innerHTML=`<div class="pitch-lines"><div class="half"></div><div class="circle"></div><div class="dot" style="left:50%;top:50%"></div><div class="box big top"></div><div class="box small top"></div><div class="dot" style="left:50%;top:22%"></div><div class="box big bottom"></div><div class="box small bottom"></div><div class="dot" style="left:50%;top:78%"></div></div>`+(l?.items||[]).map(item=>{
   const selected=item.id===selectedId?"selected":"", style=`left:${item.x}%;top:${item.y}%`;
   if(item.type==="ball")return`<button class="ball-tile ${selected}" data-item="${escapeAttr(item.id)}" style="${style}"><span class="ball-icon">⚽</span><span class="ball-label">${escapeHtml(item.name||"Ball")}</span></button>`;
-  if(l.compact)return`<button class="compact-tile ${selected}" data-item="${escapeAttr(item.id)}" style="${style}"><span class="player-dot"></span><span class="compact-name">${escapeHtml(item.name||"Unnamed")}</span></button>`;
+  if(l.compact)return`<button class="compact-tile ${selected}" data-item="${escapeAttr(item.id)}" style="${style}">${escapeHtml(compactLabel(item.name))}</button>`;
   const subs=String(item.subs||"").split("\n").map(s=>s.trim()).filter(Boolean).slice(0,4);
-  return`<button class="tile ${selected}" data-item="${escapeAttr(item.id)}" style="${style}"><div class="tile-head"><span class="num">${escapeHtml(item.short||"?")}</span><div><div class="tile-name">${escapeHtml(item.name||"Unnamed")}</div><div class="tile-kind">Player tile</div></div></div>${subs.length?`<div class="subs-mini">${subs.map(s=>`<div>${escapeHtml(s)}</div>`).join("")}</div>`:""}</button>`;
+  return`<button class="tile ${selected}" data-item="${escapeAttr(item.id)}" style="${style}"><div class="tile-head"><span class="num">${escapeHtml(item.short||"?")}</span><div><div class="tile-name">${escapeHtml(item.name||"Unnamed")}</div></div></div>${subs.length?`<div class="subs-mini">${subs.map(s=>`<div>${escapeHtml(s)}</div>`).join("")}</div>`:""}</button>`;
  }).join("");
  document.querySelectorAll("[data-item]").forEach(btn=>btn.onpointerdown=e=>{selectedId=btn.dataset.item;draggingId=selectedId;renderPitch();renderEditor();e.preventDefault()});
 }
@@ -175,7 +172,7 @@ function updateSelected(patch){const item=selectedItem();if(!item)return;updateA
 function copyToNewLineup(){const src=activeLineup();const copy={id:uid("lineup"),name:`Lineup ${state.lineups.length+1}`,formation:src.formation,compact:src.compact,items:src.items.map(i=>({...i,id:uid(i.type||"item")}))};state.lineups.push(copy);state.activeLineupId=copy.id;selectedId=copy.items[0]?.id||"";render()}
 function deleteLineup(){if(state.lineups.length<=1)return;state.lineups=state.lineups.filter(l=>l.id!==state.activeLineupId);state.activeLineupId=state.lineups[0].id;selectedId=state.lineups[0].items[0]?.id||"";render()}
 function applyFormation(name){const l=activeLineup(), fresh=makePlayers(name), old=l.items.filter(i=>i.type==="player"), other=l.items.filter(i=>i.type!=="player");const merged=fresh.map((p,i)=>({...p,name:old[i]?.name||p.name,short:old[i]?.short||p.short,subs:old[i]?.subs||p.subs}));updateActiveLineup({formation:name,items:[...merged,...other]});selectedId=merged[0]?.id||other[0]?.id||"";render()}
-function addPlayer(){const l=activeLineup(), count=l.items.filter(i=>i.type==="player").length+1, p={id:uid("player"),type:"player",name:`Player ${count}`,short:String(count),x:50,y:50,subs:"ON:\nOFF:"};updateActiveLineup({items:[...l.items,p]});selectedId=p.id;render()}
+function addPlayer(){const l=activeLineup(), count=l.items.filter(i=>i.type==="player").length+1, p={id:uid("player"),type:"player",name:`Player ${count}`,short:String(count),x:50,y:50,subs:""};updateActiveLineup({items:[...l.items,p]});selectedId=p.id;render()}
 function addBall(){const l=activeLineup(), b=makeBall(`Ball ${l.items.filter(i=>i.type==="ball").length+1}`);updateActiveLineup({items:[...l.items,b]});selectedId=b.id;render()}
 function deleteSelectedTile(){const item=selectedItem();if(!item)return;const l=activeLineup(), items=l.items.filter(i=>i.id!==item.id);updateActiveLineup({items});selectedId=items[0]?.id||"";render()}
 function saveBuild(){localStorage.setItem("football-lineup-builder-v5",JSON.stringify(state));message("Saved")}
@@ -199,13 +196,13 @@ function drawLineupPng(lineup,title){
   let x=item.x/100*w,y=item.y/100*h;
   if(item.type==="ball"){x=clamp(x,42,w-42);y=clamp(y,42,h-42);ctx.fillStyle="white";ctx.beginPath();ctx.arc(x,y,32,0,Math.PI*2);ctx.fill();ctx.font="32px Arial";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText("⚽",x,y+1);ctx.textAlign="left";ctx.textBaseline="alphabetic";return}
   if(lineup.compact){
-   x=clamp(x,20,w-230);y=clamp(y,28,h-28);ctx.fillStyle="#f8fafc";ctx.beginPath();ctx.arc(x,y,14,0,Math.PI*2);ctx.fill();ctx.strokeStyle="#020617";ctx.lineWidth=4;ctx.stroke();ctx.font="900 24px Arial";const text=fitText(ctx,item.name||"Unnamed",190),tw=ctx.measureText(text).width+28;ctx.fillStyle="rgba(2,6,23,.82)";roundRect(ctx,x+20,y-24,tw,48,18);ctx.fill();ctx.fillStyle="white";ctx.fillText(text,x+34,y+8);return
+   const radius=36; x=clamp(x,radius+10,w-radius-10); y=clamp(y,radius+10,h-radius-10);ctx.fillStyle="#f8fafc";ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fill();ctx.strokeStyle="#020617";ctx.lineWidth=7;ctx.stroke();ctx.fillStyle="#020617";ctx.font="900 30px Arial";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(compactLabel(item.name),x,y+1);ctx.textAlign="left";ctx.textBaseline="alphabetic";return
   }
   const cw=220,ch=item.subs?124:82; x=clamp(x,cw/2+10,w-cw/2-10); y=clamp(y,ch/2+10,h-ch/2-10);
   ctx.fillStyle="rgba(2,6,23,.88)";roundRect(ctx,x-cw/2,y-ch/2,cw,ch,22);ctx.fill();
   ctx.fillStyle="white";ctx.beginPath();ctx.arc(x-cw/2+38,y-ch/2+38,25,0,Math.PI*2);ctx.fill();ctx.fillStyle="#0f172a";ctx.font="900 19px Arial";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(item.short||"?",x-cw/2+38,y-ch/2+38);
   ctx.textAlign="left";ctx.textBaseline="alphabetic";ctx.fillStyle="white";ctx.font="900 25px Arial";ctx.fillText(fitText(ctx,item.name||"Unnamed",cw-86),x-cw/2+76,y-ch/2+38);
-  ctx.fillStyle="#cbd5e1";ctx.font="800 15px Arial";ctx.fillText("PLAYER TILE",x-cw/2+76,y-ch/2+62);
+  
   if(item.subs){
    const sx=x-cw/2+14,sy=y-ch/2+76,sw=cw-28;ctx.fillStyle="rgba(255,255,255,.1)";roundRect(ctx,sx,sy,sw,38,12);ctx.fill();ctx.fillStyle="#e2e8f0";ctx.font="700 15px Arial";
    String(item.subs).split("\n").map(s=>s.trim()).filter(Boolean).slice(0,2).forEach((line,i)=>ctx.fillText(fitText(ctx,line,sw-18),sx+9,sy+16+i*17));
