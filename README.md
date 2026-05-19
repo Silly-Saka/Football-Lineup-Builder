@@ -6,3 +6,4 @@ Custom football (Soccer) line up builder which has features other lineups do not
  - Multiple lineups
  - save to .json or .png
  - Pre-set formations
+ - Formation search
