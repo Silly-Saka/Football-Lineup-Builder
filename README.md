@@ -5,3 +5,4 @@ Custom football (Soccer) line up builder which has features other lineups do not
  - Subs
  - Multiple lineups
  - save to .json or .png
+ - Pre-set formations
